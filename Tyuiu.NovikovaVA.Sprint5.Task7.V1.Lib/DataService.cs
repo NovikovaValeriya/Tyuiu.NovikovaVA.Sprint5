@@ -29,14 +29,11 @@ namespace Tyuiu.NovikovaVA.Sprint5.Task7.V1.Lib
                     for (int i = 0; i < line.Length; i++)
                     {
                         char c = line[i];
-                        if (Array.IndexOf(nums, c) < 0)
+                        if ((Array.IndexOf(nums, c) < 0) && (line[i] != '.'))
                         {
                             strLine = strLine + line[i];
                         }
-                        if (line[i] != '.')
-                        {
-                            strLine = strLine + line[i];
-                        }
+
                     }
 
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
