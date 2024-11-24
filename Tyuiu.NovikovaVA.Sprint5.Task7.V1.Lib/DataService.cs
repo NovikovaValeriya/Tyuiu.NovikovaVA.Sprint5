@@ -33,9 +33,6 @@ namespace Tyuiu.NovikovaVA.Sprint5.Task7.V1.Lib
                         {
                             strLine = strLine + line[i];
                         }
-                    }
-                    for (int i = 0; i < line.Length; i++)
-                    {
                         if (line[i] != '.')
                         {
                             strLine = strLine + line[i];
